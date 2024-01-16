@@ -1,5 +1,5 @@
 import { useDashboardContext } from "../pages/DashboardLayout";
-import links from "../utils/Links.js";
+import links from "../utils/Links.jsx";
 import { NavLink } from "react-router-dom";
 import React from "react";
 
