@@ -28,7 +28,6 @@ export const authorizePermissions = (...roles) => {
 };
 
 export const checkTestUser = (req, res, next) => {
-  console.log(req, "1");
   if (req.user.testUser) {
     throw new BadRequestError("Demo user, Read only!");
   }

@@ -47,7 +47,6 @@ export const getAllJobs = async (req, res) => {
 };
 
 export const createJob = async (req, res) => {
-  console.log(req.body);
   req.body.createdBy = req.user.userId;
   const job = await JobModel.create(req.body);
   res.status(StatusCodes.CREATED).json(job);
